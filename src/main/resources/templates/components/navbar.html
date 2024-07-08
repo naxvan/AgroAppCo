@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="https://kit.fontawesome.com/3935140481.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+
+    <script src="/js/menu.js"></script>
+
+    <title>Bienvenido AgroAppCo</title>
+</head>
+<body>
+
+<header th:fragment="nav_bar">
+
+    <div class="msg-promotional">
+        <p>miercoles de frutas y verduras 30% de descuento</p>
+    </div>
+    <div class="social">
+        <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        <span>AgroApp@.com.co</span>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <div class="navbar">
+        <h1><a href="/v1/agroapp/inicio">AgroApp</a></h1>
+        <form action="#" method="post"><input class="search" type="search" name="search" id="search-input"
+                                              placeholder="Buscar producto"></form>
+        <!-- lista de productos
+frutas
+verduras
+Aromaticas
+Pulpas Congeladas
+Tuberculos
+Hortalizas
+Granos
+Semillas
+ -->
+        <ul class="menu">
+            <li class="menu-item products">
+                <a href="/v1/agroapp/inicio">Productos</a>
+                <ul class="submenu">
+                    <li><a href="#">Frutas</a></li>
+                    <li><a href="#">Verduras</a></li>
+                    <li><a href="#">Aromáticas</a></li>
+                    <li><a href="#">Pulpas Congeladas</a></li>
+                    <li><a href="#">Tubérculos</a></li>
+                    <li><a href="#">Hortalizas</a></li>
+                    <li><a href="#">Granos</a></li>
+                    <li><a href="#">Semillas</a></li>
+                </ul>
+            </li>
+            <li class="menu-item acces"><a href="/v1/agroapp/sesion">Acceder</a></li>
+            <li class="menu-item register"><a href="#">Registro</a></li>
+        </ul>
+    </div>
+</header>
+
+</body>
+</html>
+

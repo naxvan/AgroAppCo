@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.init-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/coleccion-frutas-verduras-fondo-alimentos-formato-vertical-manzanas-naranjas-tomates-fruta-fresca-verdura_770123-3581.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #9edea1;
+    height: 400px;
+}
+
+.service-img div {
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 6mm;
+    font-weight: bold;
+    color: white;
+    background-color: #77b777;
+
+}
+
+.material-symbols-outlined {
+    font-size: 48px;
+    padding: 40px;
+
+}
+
+
+
+

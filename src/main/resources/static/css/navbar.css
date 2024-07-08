@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+
+}
+
+.msg-promotional {
+    background-color: #4eb44e;
+    color: white;
+    text-align: center;
+    font-size: 5mm;
+}
+
+.social {
+    background-color: #72d972;
+    padding: 5px;
+    font-size: 5mm;
+    vertical-align: center;
+
+
+    a {
+        text-decoration: none;
+        font-size: 8mm;
+        color: #414141;
+        align-content: center;
+    }
+
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+    h1 {
+        font-size: 15mm;
+
+        a {
+            text-decoration: none;
+            color: #414141;
+        }
+
+    }
+
+    .search {
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+        height: 40px;
+        border-radius: 10px;
+        align-items: center;
+        font-size: 18px;
+        border: 1px solid #8c8888;
+    }
+
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    float: left;
+
+    .products {
+        :hover {
+            color: green;
+        }
+    }
+
+    .categories {
+        :hover {
+            color: green;
+        }
+
+    }
+
+
+    li {
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 5mm;
+
+    }
+
+    i {
+        font-size: 10mm;
+
+    }
+
+
+    .register, .acces {
+        border-right: 2px solid #5fc05f;
+        margin: 5px;
+        padding-right: 10px;
+
+
+        :hover {
+            color: green;
+
+
+        }
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .menu-item {
+        position: relative;
+    }
+
+    .menu-item a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+    .menu-item:hover > .submenu {
+        display: block;
+
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+
+    }
+
+    .submenu li {
+        width: 200px;
+    }
+
+    .submenu a {
+        padding: 10px;
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .submenu a:hover {
+        background-color: #f1f1f1;
+    }
+
+
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social span {
+    margin-left: 5px;
+}
+
+

@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../img/fruver-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Inter, sans-serif;
+    overflow: hidden;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 50px;
+
+
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.login {
+    border: 1px solid #c9c8c8;
+    border-radius: 15px;
+    width: 25%;
+    height: auto;
+    background: #fff;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    border-radius: 9px;
+    width: 70%;
+    font-size: 5mm;
+    padding: 6px;
+    margin: 10px;
+    border: 1px solid #c9c8c8;
+    background-color: transparent;
+}
+
+.init {
+    background-color: #78de78;
+    transition: .5s;
+
+}
+
+.init:hover {
+    background-color: #66bb6a;
+    transition: .5s;
+    font-size: 6mm;
+}
+
+.google {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: #dad7d7;
+    border-radius: 9px;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.google .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.politic{
+    color: #5b5555;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
