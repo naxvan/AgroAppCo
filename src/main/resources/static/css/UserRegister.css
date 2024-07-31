@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size:cover;
+    height: 173vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.registro h1, p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 2px solid rgb(120, 109, 109);
+    border-radius: 10px;
+}
+
+.opciones {
+    text-align: center;
+}
+
+.boton{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 230px;
+    text-align: center;
+    padding: 1em;
+    margin-left: 42%;
+}
+
+.boton:hover{
+    background-color: #cbaa51;
+}

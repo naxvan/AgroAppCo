@@ -7,12 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/v1/agroapp")
-public class SesionController {
+public class LoginController {
 
-
-    @GetMapping("/sesion")
-    public String sesion() {
-        return "views/init";
+    @GetMapping("/login")
+    public String login() {
+        return "views/login";
     }
 
 }

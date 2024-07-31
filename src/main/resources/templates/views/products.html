@@ -12,15 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/tarjetaProduct.css">
     <title th:text="${tittle}"></title>
 </head>
 <body>
-<header th:replace="components/navbar.html :: nav_bar"></header>
+<header th:replace="~{components/navbar.html :: nav_bar}"></header>
 
-
-
-<footer th:replace="components/footer.html :: footer"></footer>
-
+<div class="container_products">
+    <div th:each="product : ${products}" class="product-card">
+        <img th:src="${product.image}"
+             src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2018/05/variedades-de-manzanas-buenmercadoacasa-portada.jpg?resize=1080%2C675&ssl=1"
+             alt="Nombre del Producto">
+        <h2 th:text="${product.name}">Manzana</h2>
+        <p th:text="${product.description}">Deliciosas manzanas</p>
+        <div th:text="${product.price}" class="price"></div>
+        <button>Añadir al carrito</button>
+    </div>
+</div>
+<footer th:replace="~{components/footer.html :: footer}"></footer>
 </body>
-
 </html>

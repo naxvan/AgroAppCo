@@ -20,7 +20,7 @@
     <title>Bienvenido - Inicio </title>
 </head>
 <body>
-<header th:replace="components/navbar.html :: nav_bar"></header>
+<header th:replace="~{components/navbar.html :: nav_bar}"></header>
 
 <main>
     <div class="init-img">
@@ -53,6 +53,6 @@
     </div>
 </main>
 
-<footer th:replace="components/footer.html :: footer"></footer>
+<footer th:replace="~{components/footer.html :: footer}"></footer>
 </body>
 </html>

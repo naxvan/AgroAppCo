@@ -34,6 +34,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    border-bottom: 1px solid #b9b9b9;
+
+
 
     h1 {
         font-size: 15mm;
@@ -163,7 +166,6 @@
     .submenu a:hover {
         background-color: #f1f1f1;
     }
-
 
 }
 

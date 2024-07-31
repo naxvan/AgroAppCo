@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrar Producto</title>
+</head>
+<body>
+
+
+<body>
+<h1>Formulario de Producto</h1>
+<form action="/v1/agroapp/saveProduct" method="post">
+
+    <label for="name">Nombre del producto:</label>
+    <input type="text" id="name" name="name" th:value="${product.name}" required><br><br>
+
+
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="description" th:value="${product.description}" required></textarea><br><br>
+
+
+    <label for="PLU">referencia:</label>
+    <input type="number" id="PLU" name="PLU" th:value="${product.PLU}" required><br><br>
+
+    <label for="image">Imagen del producto:</label>
+    <input type="text" id="image" name="image" th:value="${product.image}" ><br><br>
+
+    <label for="price">Precio por kg:</label>
+    <input type="number" step="0.01" id="price" th:value="${product.price}" name="price" required><br><br>
+
+    <label for="category">Categoría:</label>
+    <select id="category" name="category" th:value="${product.category}" required>
+        <option value="">Seleccione una categoría</option>
+        <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
+    </select><br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>

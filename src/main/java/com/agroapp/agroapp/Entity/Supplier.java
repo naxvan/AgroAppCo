@@ -1,15 +1,13 @@
 package com.agroapp.agroapp.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Date;
+import java.util.Set;
 
 @Setter
 @Getter
@@ -31,4 +29,8 @@ public class Supplier {
     private String notes;
     private Date createdAt;
     private Date updatedAt;
+
+    @OneToMany
+    @JoinColumn(name = "supplier_id")
+    private Set<Product> products;
 }
