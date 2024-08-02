@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/WorkUs.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header th:replace="~{components/navbar.html :: nav_bar}"></header>
+<div class="container">
+    <div class="form-container">
+        <h1>Trabaja Con Nosotros</h1>
+        <p class="text">Por favor diligencie los datos de contacto</p>
+        <form>
+            <div class="form-group">
+                <div class="form-field">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div class="form-field">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="descripcion">Una descripcion acerca de usted</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="Por favor ingrese su descripción aquí"
+                      required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="image-container">
+        <img src="/img/imagen.jpeg" alt="Imagen descriptiva">
+    </div>
+</div>
+<footer th:replace="~{components/footer.html :: footer}"></footer>
+</body>
+</html>
