@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<header th:replace="components/navbar.html :: nav_bar"></header>
+<header th:replace="~{components/navbar.html :: nav_bar}"></header>
 
 <div class="container">
     <div class="left-section">
@@ -48,6 +48,6 @@
         </div>
     </div>
 </div>
-<footer th:replace="components/footer.html :: footer"></footer>
+<footer th:replace="~{components/footer.html :: footer}"></footer>
 </body>
 </html>

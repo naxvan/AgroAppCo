@@ -38,6 +38,6 @@ public class ProductRegisterController {
     @PostMapping("/saveProduct")
     public String saveProduct(@ModelAttribute Product product) {
         productService.saveProduct(product);
-        return "redirect:/v1/agroapp/inicio";
+        return "redirect:/v1/agroapp/dashboard";
     }
 }

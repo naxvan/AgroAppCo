@@ -1,117 +1,96 @@
+
 body {
     margin: 0;
-    padding: 0;
-    background-size: cover;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.brand img{
-    width: 300px;
-    height: 100px;
-    cursor: pointer;
-    border-radius: 50%;
+    background-image: url("../img/fondoLogin.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Inter, sans-serif;
+    overflow: hidden;
+
 }
 
-.Inicio{
-    margin-top: 50px;
-    margin-left: 40px;
-}
 
-.formulario{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    border-radius: 10px;
-}
-
-.formulario h2{
+h1 {
     text-align: center;
-    padding: 0 0 20px 0;
+    margin-top: 10%;
+    font-size: 50px;
+
 }
 
-.redes-sociales{
-    margin: 35px auto;
+h2 {
     text-align: center;
 }
 
-.redes-sociales img{
-    width: 35px;
-    margin: 0 12px;
-    cursor: pointer;
-    border-radius: 50%;
+p {
+    text-align: center;
 }
 
-.formulario form{
-    padding: 0 40px;
-    box-sizing: border-box;
+.login {
+    border: 1px solid #c9c8c8;
+    border-radius: 15px;
+    width: 25%;
+    height: auto;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 50px;
 }
 
-form .username{
-    position: relative;
-    border-bottom: 1px solid rgb(24, 24, 24);
-    margin: 30px 0;
+.form {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.username input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16 px;
-    border: none;
-    background:none ;
-    outline: none;
+input {
+    border-radius: 9px;
+    width: 70%;
+    font-size: 5mm;
+    padding: 6px;
+    margin: 10px;
+    border: 1px solid #c9c8c8;
+    background-color: transparent;
 }
 
-.username label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: black;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
+.init {
+    background-color: #78de78;
     transition: .5s;
+
 }
 
-.username input:focus ~ label,
-.username input:focus ~ label   {
-    top: -5px;
-    color: black;
-}
-
-.checkbox {
-    margin: -5px 5px 10px 5px;
-}
-
-input[type="submit"]{
-    width: 80%;
-    height: 40px;
-    background: black;
-    border-radius: 10px;
-    font-size: 16px;
-    color: white;
-    outline: none;
-}
-
-input[type="submit"]:hover{
-    border-color: black;
+.init:hover {
+    background-color: #66bb6a;
     transition: .5s;
+    font-size: 6mm;
 }
 
-.registrarse{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 16px;
-    color: black;
-}
-
-.registrarse a{
-    color: rgb(201, 37, 37);
+.google {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+    color: inherit;
+    background-color: #dad7d7;
+    border-radius: 9px;
+    margin: 20px;
+    padding: 10px;
+
 }
 
-.registrarse a:hover {
-    text-decoration: underline;
+.google .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
+
+.politic {
+    color: #5b5555;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+

@@ -8,13 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/v1/agroapp")
 public class HomeController {
 
-
     @GetMapping("/inicio")
     public String inicio() {
         return "views/home";
     }
-
-
-
 
 }

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #e8f5e9;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 6px solid #66bb6a;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #388e3c;
+}
+
+.profile-card a, .list-card a {
+    display: inline-block;
+    background-color: #66bb6a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.profile-card a {
+    margin-right: 5px;
+}
+
+.list-card a.create-btn {
+    background-color: #66bb6a;
+    margin-left: 5px;
+}
+
+.list-card-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.list-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-card th, .list-card td {
+    padding: 10px;
+    text-align: left;
+}
+
+.list-card th {
+    background-color: #f5f5f5;
+    color: #388e3c;
+}
+
+.list-card img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 4px;
+}
+
+.list-card .actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.list-card {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.delte-btn{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.delte-btn:hover{
+    background-color: #d38888;
+    transition: 0.5s;
+}
+
+.edit-btn{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.edit-btn:hover{
+    background-color: #4eb44e;
+    transition: 0.5s;
+}
+
+
+
+
+

@@ -15,17 +15,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 
-public class User {
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String username;
-    private String password;
-    private String firstName;
-    private String lastName;
-    private String phone;
+    private String fullname;
     private String email;
-    private String role;
-    private String zipCode;
-
+    private String password;
+    private String phone;
 }

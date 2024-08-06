@@ -25,13 +25,15 @@ public class Product {
     private double price;
     @Column(updatable = false)
     private Date created_at = new Date();
-
     private Date updated_at = new Date();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private ProductCategory category;
 
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
     @PrePersist
     protected void OnCreate() {
         if (image == null || image.isEmpty()) {

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/3935140481.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3935140481.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <title>Vendedor AgroAppCo</title>
+</head>
+
+<body>
+<div class="dashboard">
+    <h1>AgroAppCo</h1>
+    <h2>Bienvenido <span th:text="${supplier.name}">Juan Perez</span></h2>
+    <div class="card profile-card">
+        <h2>Datos de mi Cuenta</h2>
+        <p><strong>Nombre:</strong> <span th:text="${supplier.name}"></span></p>
+        <p><strong>Cargo:</strong> <span th:text="${supplier.contactTittle}"></span></p>
+        <p><strong>Dirección:</strong> <span th:text="${supplier.address}"></span></p>
+        <p><strong>Teléfono:</strong> <span th:text="${supplier.phone}"></span></p>
+        <a href="#">Editar datos de contacto</a>
+        <a href="/v1/agroapp/registroProducto" class="create-btn">Registrar Producto</a>
+    </div>
+    <div class="card list-card">
+        <h2>Lista de Productos en el MarketPlace AgroAppCO</h2>
+        <div class="list-card-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Referencia</th>
+                    <th>Nombre</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${products}">
+                    <td><img th:src="${product.image}" alt="Imagen del producto"></td>
+                    <td th:text="${product.PLU}"></td>
+                    <td><span th:text="${product.name}"></span></td>
+                    <td class="actions">
+                        <form th:action="@{dashboard/edit/{id}(id=${product.id})}" method="get">
+                            <button class="edit-btn" type="submit">Editar Producto</button>
+                        </form>
+                        <form th:action="@{dashboard/delete/{id}(id=${product.id})}" method="post"
+                              onsubmit="return confirm('¿Estás seguro de que deseas eliminar este producto?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button class="delte-btn" type="submit">Eliminar Producto</button>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
