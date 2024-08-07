@@ -1,186 +1,123 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Inter;
-
+    font-family: "Roboto", sans-serif;
 }
 
-.msg-promotional {
-    background-color: #4eb44e;
-    color: white;
-    text-align: center;
-    font-size: 5mm;
+a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
 }
 
-.social {
-    background-color: #72d972;
-    padding: 5px;
-    font-size: 5mm;
-    vertical-align: center;
-
-
-    a {
-        text-decoration: none;
-        font-size: 8mm;
-        color: #414141;
-        align-content: center;
-    }
-
-
-}
-
-.navbar {
+.socials {
     display: flex;
     flex-direction: row;
+    justify-content: end;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.socials img {
+    width: 35px;
+    transition: all 0.1s ease-in;
+}
+
+.facebook:hover {
+    filter: invert(34%) sepia(91%) saturate(3101%) hue-rotate(203deg) brightness(100%) contrast(91%);;
+}
+
+.instagram:hover {
+    filter: invert(35%) sepia(48%) saturate(6946%) hue-rotate(315deg) brightness(89%) contrast(94%);
+}
+
+.top, nav, nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.top {
     justify-content: space-between;
-    padding: 20px;
-    border-bottom: 1px solid #b9b9b9;
-
-
-    h1 {
-        font-size: 15mm;
-
-        a {
-            text-decoration: none;
-            color: #414141;
-        }
-
-    }
-
-    .search {
-        width: 100%;
-        padding: 10px;
-        margin: 20px;
-        height: 40px;
-        border-radius: 10px;
-        align-items: center;
-        font-size: 18px;
-        border: 1px solid #8c8888;
-    }
-
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(39, 39, 39,0.4);
 }
 
+nav {
+    justify-content: space-between;
+    flex: 1;
+}
 
-.menu {
+.submenu {
+    padding-left: 50px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 575;
+    gap: 25px;
+}
+
+.submenu li a:hover {
+    color: #3BAE49;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.signin {
+    color: #0067E6;
+    border-color: rgba(0, 103, 230, 0.5);
+    margin-right: 10px;
+}
+
+.signin:hover {
+    border-color: #0067E6;
+}
+
+.signup {
+    color: white;
+    border-color: #3BAE49;
+    background-color: #3BAE49;
+}
+
+.signup:hover {
+    background-color: #1b5e23;
+    border-color: #1b5e23;
+}
+
+.bottom form {
+    margin-top: 15px;
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    float: left;
-    text-align: center;
-
-    .products {
-        :hover {
-            color: green;
-        }
-    }
-
-    .categories {
-        :hover {
-            color: green;
-        }
-
-    }
-
-
-    li {
-        text-decoration: none;
-        list-style: none;
-
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 5mm;
-
-
-    }
-
-    i {
-        font-size: 10mm;
-
-    }
-
-
-    .register, .acces {
-        border-right: 2px solid #5fc05f;
-        margin: 5px;
-        padding-right: 10px;
-
-
-        :hover {
-            color: green;
-
-
-        }
-    }
-
-    .menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-
-    .menu-item {
-        position: relative;
-    }
-
-    .menu-item a {
-        display: block;
-        padding: 10px 15px;
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-    }
-
-    .menu-item:hover > .submenu {
-        display: block;
-
-    }
-
-    .submenu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-
-    }
-
-    .submenu li {
-        width: 200px;
-    }
-
-    .submenu a {
-        padding: 10px;
-        display: block;
-        color: black;
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    .submenu a:hover {
-        background-color: #f1f1f1;
-    }
-
+    width: 100%;
 }
 
-.social {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.bottom input {
+    width: 75%;
+    padding: 10px 20px 10px 40px;
+    background-image: url("/img/icon_search.png");
+    background-position: 5px;
+    background-size: 26px; 
+    background-repeat: no-repeat;
+    border-style: none;
+    border: 1px solid rgba(39, 39, 39,0.4);
+    border-radius: 5px;
 }
 
-.social a {
-    text-decoration: none;
-    color: inherit;
+.bottom input:hover {
+    border-color: rgb(39, 39, 39);
 }
 
-.social span {
-    margin-left: 5px;
+.bottom input:focus {
+    outline: none; 
+    border-color: none;
 }
 
-
+.bottom input:focus-visible {
+    outline: 3px solid #3BAE49;
+    border-color: none;
+}
